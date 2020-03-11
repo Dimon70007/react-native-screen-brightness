@@ -255,7 +255,7 @@ public class ScreenBrightnessModule extends ReactContextBaseJavaModule
      */
     @ReactMethod
     public void getBrightness(final Promise promise) {
-        getSystemBrightness(promise);
+        getAppBrightness(promise);
     }
 
     /**
@@ -268,6 +268,6 @@ public class ScreenBrightnessModule extends ReactContextBaseJavaModule
      */
     @ReactMethod
     public void setBrightness(float brightness, final Promise promise) {
-        setSystemBrightness(brightness, promise);
+        setAppBrightness(brightness, promise);
     }
 }
